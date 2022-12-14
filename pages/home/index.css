@@ -1,1 +1,306 @@
-/* Desenvolva sua estilização aqui... */
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background-image: url(/assets/img/Pexels\ Photo\ by\ Christina\ Morillo\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 425px;
+
+    width: 100vw;
+    height: 700px;
+
+    padding: 50px 20px;
+    
+}
+
+header > h1{
+    color: var(--color-grey-6);
+    font-size: var(--title-1);
+}
+
+header > h3{
+    color: var(--color-grey-3);
+    font-size: var(--title-3);
+    padding-top: 60px;
+}
+
+header > p{
+    color: var(--color-grey-5);
+    font-size: var(--text-1);
+
+    text-align: justify;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    width: 90%;
+}
+
+header > span{
+    color: var(--color-grey-5);
+    font-size: var(--text-1);
+
+    text-align: justify;
+    font-weight: bold;
+}
+
+header > button {
+    margin-top: 72px;
+
+    background-color: var(--color-brand-1);
+    border: 2px solid var(--color-brand-1);
+    border-radius: var(--radius-default);
+    color: var(--color-grey-6);
+
+    font-size: var(--text-2);
+
+    padding: 12px 50px;
+
+    cursor: pointer;
+}
+
+main{
+    background-color: var(--color-grey-5);
+    
+}
+
+section > h4{
+    padding: 28px 50px 0px 50px;
+}
+
+.jobs__container{
+    padding: 28px 50px;
+    list-style: none;
+
+    background-color: var(--color-grey-5);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+    
+}
+
+.jobs__container > h4{
+    padding: 20px;
+}
+
+.jobs__cards{
+    padding: 38px;
+    background-color: var(--color-grey-6);
+
+    border-radius: var(--radius-default);
+
+    height: 530px;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.jobs__cards > h4{
+    color: var(--color-grey-1);
+    font-size: var(--title-4);
+
+    
+}
+
+.jobs__cards > div > span{
+    font-size: var(--text-4);
+    color: var(--color-grey-2);
+    
+    margin-right: 10px;
+}
+
+.jobs__cards > p{
+    color: var(--color-grey-2);
+    font-size: var(--text-2);
+    text-align: justify;
+    
+    line-height: 200%;
+}
+
+.jobs__cards > span{
+    color: var(--color-grey-2);
+    font-size: var(--text-2);
+
+    background-color: var(--color-grey-3);
+
+    padding: 4px 12px;
+    border-radius: var(--radius-default);
+}
+
+.jobs__cards > button{
+    width: 100%;
+    color: var(--color-grey-6);
+
+    font-size: var(--text-2);
+    padding: 12px 28px;
+
+    background-color: var(--color-brand-1);
+    border: 2px solid var(--color-brand-1);
+    border-radius: var(--radius-default);
+
+    cursor: pointer;
+    
+}
+
+
+
+main > h4{
+    padding-left: 60px;
+}
+
+section{
+    height: 500px;
+
+    overflow-y: auto;
+}
+
+.selected-jobs__container{
+    padding: 28px 30px;
+    list-style: none;
+
+    background-color: var(--color-grey-5);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    height: 90%;
+
+    overflow-y: auto;
+}
+
+.selected-jobs__container > h4{
+    padding-left: 20px;
+}
+
+.no-jobs-selected{
+    padding: 38px;
+    background-color: var(--color-grey-6);
+
+    border-radius: var(--radius-default);
+
+    height: 100px;
+}
+
+.no-jobs-selected > p{
+    font-size: var(--text-2);
+    color: var(--color-grey-2);
+
+    line-height: 150%;
+}
+
+.jobs-selected__cards{
+    padding: 38px;
+    background-color: var(--color-grey-6);
+
+    border-radius: var(--radius-default);
+
+    height: 230px;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    position: relative;
+}
+
+.jobs-selected__cards > h4{
+    color: var(--color-grey-1);
+    font-size: var(--title-4);
+
+    
+    margin-right: 60px;
+
+    text-align: justify;
+}
+
+.jobs-selected__cards > div > span{
+    font-size: var(--text-4);
+    color: var(--color-grey-2);
+    margin-right: 20px;
+}
+
+
+.jobs-selected__cards > button{
+    position: absolute;
+    top: 40px;
+    right: 15px;
+
+    color: var(--color-grey-2);
+
+    padding: 20px 5px;
+    font-size: var(--text-4);
+    
+
+    background-color: var(--color-grey-5);
+    border: 2px solid var(--color-grey-5);
+    border-radius: var(--radius-default);
+
+    cursor: pointer;
+}
+
+@media (min-width: 425px){
+    header{
+        background-image: url(/assets/img/Pexels\ Photo\ by\ Christina\ Morillo11.png);
+        background-repeat: no-repeat;
+        background-size: 100vw 700px;
+        padding: 50px 50px;
+    }
+
+    .jobs__container{
+        width: 900px;
+        max-width: 100%;
+    }
+
+    section{
+        width: 900px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1300px){
+    header{
+        
+        background-image: url(/assets/img/Pexels\ Photo\ by\ Christina\ Morillo.png);
+        background-repeat: no-repeat;
+        padding: 50px 100px;
+    }
+
+    .jobs__container{
+        width: 700px;
+
+        padding-left: 100px;
+    }
+
+    main{
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+
+    }
+
+    section{
+        position: sticky;
+        top: 0;
+        right: 180px;
+
+        margin-top: 30px;
+        width: 500px;
+    }
+
+    section > h4{
+        padding: 28px 50px 0px 50px;
+    }
+}
+

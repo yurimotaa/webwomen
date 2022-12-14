@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/globalStyles.css">
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
@@ -16,8 +17,43 @@
     />
 </head>
 <body>
-    <main></main>
-    <script src="jobsData.js"></script>
-    <script src="index.js"></script>
+  <header>
+    <h1>Webwomen</h1>
+    <h3>Lugar de mulher é onde ela quiser!</h3>
+    <p>
+      Está procurando oportunidades de estágio, emprego ou bolsas de estudo? 
+      Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil e ao redor do mundo? 
+    </p>
+    <span>Confere aqui embaixo o que temos pra você!</span> 
+    <button>Ir para seção das vagas</button>
+  </header>
+
+
+  <main>
+    <ul class="jobs__container">
+      <h4>Vagas</h4>
+      <!-- <li class="jobs__cards">
+        <h4>Pessoa desenvolvedora front-end - React JS</h4>
+         <div>
+          <span>Kenzie Academy</span>
+          <span>Curitiba</span>
+        </div>
+         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+         <span>Home office</span>
+        <button class="subscribe">Candidatar</button>
+      </li> -->
+    </ul>
+
+    <section>
+      <h4>Vagas Selecionadas</h4>
+      <ul class="selected-jobs__container">
+      </ul>
+    </section>
+    
+  </main>
+  <script src="jobsData.js"></script>
+  <script src="./localStorage.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
