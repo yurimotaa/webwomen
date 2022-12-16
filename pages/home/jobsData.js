@@ -29,4 +29,5 @@ const jobsData = [
 ];
 
 const selectedJobs = []
+const selectedToLocalStorage = []
 

@@ -72,7 +72,9 @@ section > h4{
 }
 
 .jobs__container{
-    padding: 28px 50px;
+    padding: 50px 20px;
+    max-width: 90%;
+
     list-style: none;
 
     background-color: var(--color-grey-5);
@@ -157,13 +159,14 @@ main > h4{
 }
 
 section{
-    height: 500px;
+    height: 600px;
 
     overflow-y: auto;
 }
 
 .selected-jobs__container{
-    padding: 28px 30px;
+    padding: 50px 20px;
+    max-width: 90%;
     list-style: none;
 
     background-color: var(--color-grey-5);
@@ -183,7 +186,7 @@ section{
 }
 
 .no-jobs-selected{
-    padding: 38px;
+    padding: 20px 20px;
     background-color: var(--color-grey-6);
 
     border-radius: var(--radius-default);
@@ -260,27 +263,43 @@ section{
 
     .jobs__container{
         width: 900px;
-        max-width: 100%;
+        max-width: 90%;
     }
 
     section{
         width: 900px;
+        max-width: 90%;
+    }
+    .selected-jobs__container{
+        padding: 50px 20px;
         max-width: 100%;
+        list-style: none;
+    
+        background-color: var(--color-grey-5);
+    
+        display: flex;
+        flex-direction: column;
+    
+        gap: 15px;
+    
+        height: 90%;
+    
+        overflow-y: auto;
     }
 }
 
-@media (min-width: 1300px){
+@media (min-width: 1280px){
     header{
         
         background-image: url(/assets/img/Pexels\ Photo\ by\ Christina\ Morillo.png);
         background-repeat: no-repeat;
-        padding: 50px 100px;
+        padding: 50px 50px;
     }
 
     .jobs__container{
         width: 700px;
-
-        padding-left: 100px;
+        padding: 50px 50px;
+        
     }
 
     main{
@@ -295,6 +314,7 @@ section{
         top: 0;
         right: 180px;
 
+        padding: 50px 50px;
         margin-top: 30px;
         width: 500px;
     }
